@@ -8,9 +8,6 @@ A responsive website designed for Zach Lewis, a Finance Law Attorney. This proje
 ## Preview
 [Live Website on GitHub Pages](https://abrilmarangoni.github.io/Law/)
 
-## Screenshots
-![Homepage](screenshot1.png)
-![Responsive Design](screenshot2.png)
 
 ## Technologies Used
 - HTML5
