@@ -1,3 +1,212 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Separator Styles */
+.separator {
+    width: 50px;
+    height: 4px;
+    background-color: #b22d2d; /* Rojo llamativo */
+    margin: 1rem auto; /* Centrado */
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(90deg, #1c3b57, #144060);
+    color: white;
+    padding: 1.5rem 0;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+
+.header-left p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.header-right img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Profile Section */
+.profile {
+    background-color: #ffffff;
+    padding: 4rem 0;
+}
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.description h2 {
+    font-size: 2rem;
+    color: #1c3b57;
+    margin-bottom: 1rem;
+}
+
+.description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.description .btn-linkedin {
+    display: inline-block;
+    background: #0077b5;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.description .btn-linkedin:hover {
+    background: #005582;
+    transform: scale(1.05);
+}
+
+/* Services Section */
+.services {
+    background-color: #f9fbfd;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    color: #1c3b57;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #1c3b57;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.card .icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-info {
+    background-color: #ffffff;
+    padding: 4rem 0;
+    text-align: left;
+    border-top: 3px solid #b22d2d;
+}
+
+.contact-info .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-info div {
+    flex: 1 1 300px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1c3b57;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.contact-info a {
+    color: #b22d2d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1c3b57;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1rem;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .header-content {
@@ -5,14 +214,32 @@
         text-align: center;
     }
 
+    .header-left h1 {
+        font-size: 2rem;
+    }
+
+    .header-right img {
+        margin-top: 1rem;
+    }
+
     .profile-content {
         grid-template-columns: 1fr;
         text-align: center;
     }
 
+    .photo img {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .separator {
+        margin: 1rem auto;
+    }
+
     .cards {
-        flex-direction: column;
-        gap: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .contact-info .container {
@@ -20,20 +247,12 @@
         text-align: center;
     }
 
-    .header-right img {
-        margin-top: 1rem;
-    }
-
-    .description h2, .services h2, .contact-info h2 {
+    .contact-info h2 {
         font-size: 1.8rem;
     }
 
-    .description p {
+    .contact-info p {
         font-size: 1rem;
-    }
-
-    .card {
-        max-width: 100%;
     }
 
     .footer p {
